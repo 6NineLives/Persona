@@ -1,0 +1,20 @@
+{
+  "name": "persona-local-first",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "mcp:stdio": "node --enable-source-maps ./dist/src/interfaces/mcp/stdioServer.js",
+    "smoke": "node --enable-source-maps ./dist/scripts/smoke.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.8.3"
+  }
+}
